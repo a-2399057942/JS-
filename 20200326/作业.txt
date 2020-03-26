@@ -1,0 +1,45 @@
+1、
+2、7   10    （16，15）
+3、false  ture  ture  false  Object  10  1  -1  -1  报错
+4、0   30
+5、Tom  Tom  join
+6、1  undefined  3  false  ture  ture
+7、zhufeng 5000
+     zhufeng  5000
+     9
+     5000
+8、
+9、let ary = [12, 23, 12, 13, 13, 12, 23, 14, 8];
+        Array.prototype.unique = function () {
+            let obj;
+            for (let i = 0; i < ary.length - 1; i++) {
+                let item = ary[i];
+                let n = i + 1;
+                for (let n = i + 1; n < ary.length; n++) {
+                    if (item === ary[n]) {
+                        ary.splice(n, 1);
+                        n--;
+                    }
+                }
+            }
+            return this;
+        }
+        ary.unique().sort((a, b) => a - b);
+        console.log(ary);
+10、function getParam(key){
+            let askIndex=url.indexOf('?'),
+                askText='';
+            let obj;
+            askIndex>-1?askText=this.substring(askIndex+1):null;
+            if(askText){
+                askText.split('&').forEach(item=>{
+                    item=item.split('=');
+                    if(item[0]===key){
+                        obj=item[1];
+                    }else{
+                        null;
+                    }
+                })
+            }
+            return obj;
+        }
