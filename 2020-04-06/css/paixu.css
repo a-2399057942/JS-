@@ -4,15 +4,13 @@
 	margin: 10px auto;
 }
 .productBox .card {
-	margin-right: 1%;
+	margin-right: 11px;
 	margin-bottom: 10px;
-	width: 19.2%;
+	width: 213px;
 }
-
 .productBox .card:nth-child(5n+5) {
 	margin-right: 0;
 }
-
 .productBox .card .card-title {
 	text-overflow: ellipsis;
 	overflow: hidden;
