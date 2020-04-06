@@ -1,12 +1,8 @@
-.navbar-nav {
-	flex-direction: row;
-}
 .productBox {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 10px auto;
 }
-
 .productBox .card {
 	margin-right: 1%;
 	margin-bottom: 10px;
